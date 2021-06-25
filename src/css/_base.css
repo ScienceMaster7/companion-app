@@ -3,3 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html,
+:root {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  --universal-padding: 20px;
+}
