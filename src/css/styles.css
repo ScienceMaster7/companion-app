@@ -1,0 +1,105 @@
+@import url(_base.css);
+@import url(_colors.css);
+@import url(_utility.css);
+@import url(_fonts.css);
+
+.outer-grid {
+  display: grid;
+  grid-template-rows: 13vh auto 10vh;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--header-bgcolor);
+  text-transform: uppercase;
+  background-image: url('/design/background_shape_1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  background-color: var(--content-bgcolor);
+  scroll-behavior: smooth;
+  padding: 1.5em;
+  gap: 1em;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--footer-bgcolor);
+  padding: 1em;
+}
+
+.navbar {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--universal-padding);
+  border-radius: 8px;
+  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a,
+.navbar img {
+  display: block;
+}
+
+.active {
+  background-color: aliceblue;
+} /*Not final style, might need to change it.*/
+
+.name-box {
+  border: 0.1em solid var(--border-color);
+  border-radius: 5px;
+}
+
+.name-box > * {
+  border-bottom: 0.1em solid var(--border-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--universal-padding) 0;
+}
+
+.name-box:last-child {
+  border-bottom: none;
+}
+
+.review-box {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
+}
+
+.pair-box__item:first-of-type {
+  position: relative;
+}
+
+.pair-box__item:first-of-type::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: url(/design/icons/Plus.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 87.5%;
+}
