@@ -128,3 +128,103 @@ footer {
 .navbar a.active {
   opacity: 1;
 }
+
+/*====== SPECIFIC TO ENERGY SCREEN */
+
+.level-bar__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.level-bar__item {
+  background-color: aqua;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.level-bar__item:nth-of-type(1) {
+  background-color: var(--button-color-100);
+}
+
+.level-bar__item:nth-of-type(2) {
+  background-color: var(--button-color-75);
+}
+
+.level-bar__item:nth-of-type(3) {
+  background-color: var(--button-color-50);
+}
+
+.level-bar__item:nth-of-type(4) {
+  background-color: var(--button-color-25);
+}
+
+.text--white {
+  color: white;
+}
+
+.text--orange {
+  color: var(--button-color-100);
+}
+
+/*This is the chart*/
+
+.chart-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-box__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.rows-wrapper {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.rows {
+  background-color: teal;
+  width: 100%;
+  height: 3em;
+  gap: 1rem;
+  border: 1px solid black;
+}
+
+.rows::before:nth-of-type(1) {
+  content: '100';
+}
+
+.rows:first-child {
+  height: 1rem;
+}
+
+.legend {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.legend-text-box {
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+}
+
+.text-box--orange {
+  background-color: var(--button-color-25);
+}
+
+.text-box--blue {
+  background-color: var(--chart-otherstudents-color);
+}
