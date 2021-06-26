@@ -1,11 +1,11 @@
 :root {
-  --header-bgcolor: rgba(222, 222, 222, 0.5);
   --footer-bgcolor: white;
   --content-bgcolor: white;
-  --header-text-color: #193251;
-  --title-text-color: #193251;
+  --title-text-color: rgb(25, 50, 81);
   --name-color: #7589a2;
   --border-color: #e0e4e8;
-  --button-color: #ff5a36;
-  --footer-bgcolor: white;
+  --button-color-100: hsl(11, 100%, 61%);
+  --button-color-75: hsl(11, 75%, 61%);
+  --button-color-50: hsl(11, 50%, 61%);
+  --button-color-25: hsl(11, 25%, 61%);
 }
