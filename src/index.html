@@ -4,30 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/styles.css" />
     <title>Companion-App</title>
   </head>
-  <body>
-    <header class="header">
+  <body class="outer-grid">
+    <!-- HEADER -->
+    <header>
       <h1 class="header__title">Dashboard</h1>
     </header>
+    <!-- CONTENT -->
     <main class="content">
       <!--this is a pair box-->
       <section class="pair-box__wrapper">
         <h2 class="pair-box__title">Your code buddy for today is:</h2>
-        <div class="pair-box">
-          <div class="pair-box__item name-box">Sudanka Bakalowits</div>
-          <div class="pair-box__item name-box">Yasaman Foroutan</div>
+        <div class="pair-box name-box">
+          <div class="pair-box__item"><p>Sudanka Bakalowits</p></div>
+          <div class="pair-box__item"><p>Yasaman Foroutan</p></div>
         </div>
       </section>
       <!--this is a teambox-->
       <section class="team-box__wrapper">
         <h2 class="team-box__title">Your current team</h2>
-        <div class="team-box">
-          <div class="team-box__item name-box">Chioke Okonkwo</div>
-          <div class="team-box__item name-box">María José Botín</div>
-          <div class="team-box__item name-box">Tikhon Yaroslavsky</div>
-          <div class="team-box__item name-box">Sudanka Bakalowits</div>
-          <div class="team-box__item name-box">Yasaman Foroutan</div>
+        <div class="team-box name-box">
+          <div class="team-box__item"><p>Tikhon Yaroslavsky</p></div>
+          <div class="team-box__item"><p>Sudanka Bakalowits</p></div>
+          <div class="team-box__item"><p>María José Botín</p></div>
+          <div class="team-box__item"><p>Yasaman Foroutan</p></div>
+          <div class="team-box__item"><p>Chioke Okonkwo</p></div>
         </div>
       </section>
       <!--this is the review card-->
@@ -35,6 +38,7 @@
         <h2 class="review-box__title">Yesterdays Journal:</h2>
         <div class="review-box">
           <h4 class="review-box__sub-title">Rating</h4>
+          <!-- STARS without Headline-->
           <div class="review-box__rating-stars">
             <img src="/design/icons/Star.svg" alt="rating star icon" />
             <img src="/design/icons/Star.svg" alt="rating star icon" />
@@ -43,6 +47,7 @@
             <img src="/design/icons/Star.svg" alt="rating star icon" />
           </div>
           <h4 class="review-box__sub-title">Comprehension</h4>
+          <!-- RECTANGLES without Headline-->
           <div class="review-box__rating-box">
             <img
               src="/design/icons/Rectangle.svg"
@@ -83,20 +88,24 @@
             />
           </div>
           <h4 class="review-box__sub-title">Motto</h4>
-          <p><strong>"thats life in the city"</strong></p>
+          <!-- QUOTE -->
+          <p class="review-box__quote">"That's life in the city"</p>
           <h4 class="review-box__sub-title">Notes</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-            adipisci facilis! Architecto iusto officia neque commodi odio
-            aspernatur molestias, alias minus, laboriosam reprehenderit impedit
-            inventore dolor expedita officiis non molestiae!
+          <!-- NOTE -->
+          <p class="review-box__notes">
+            Si sine causa? quae fuerit causa, mox videro; interea hoc tenebo, si
+            mihi. Et quidem se repellere, idque instituit docere sic omne
+            animal, simul atque.
           </p>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- FOOTER -->
+    <footer>
       <nav class="navbar">
-        <a href="#"><img src="/design/icons/DashboardIcon.svg" alt="icon" /></a>
+        <a class="active" href="#"
+          ><img src="/design/icons/DashboardIcon.svg" alt="icon"
+        /></a>
         <a href="#"><img src="/design/icons/BuddyIcon.svg" alt="icon" /></a>
         <a href="#"><img src="/design/icons/TeamIcon.svg" alt="icon" /></a>
         <a href="#"><img src="/design/icons/EnergyIcon.svg" alt="icon" /></a>
