@@ -1,8 +1,10 @@
+/* ===== GENERAL FONTS */
 h1 {
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.5rem;
   color: var(--title-text-color);
+  text-transform: uppercase;
 }
 
 h2 {
@@ -14,9 +16,10 @@ h2 {
 }
 
 h3 {
-  /* font-weight: 500;
-  line-height: auto; */
-  font-size: 1rem;
+  font-weight: normal;
+  line-height: 18px;
+  font-size: 0.75rem;
+  color: var(--name-color);
 }
 
 h4 {
@@ -32,6 +35,8 @@ p {
   font-size: 1rem;
   color: var(--name-color);
 }
+
+/*===== SPECIFIC FONTS*/
 .review-box__quote {
   color: var(--title-text-color);
 }
