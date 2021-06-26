@@ -1,19 +1,23 @@
+/*====== IMPORTS */
+
 @import url(_base.css);
 @import url(_colors.css);
 @import url(_utility.css);
 @import url(_fonts.css);
 
+/*====== NON-SPECIFIC BLOCKS */
 .outer-grid {
   display: grid;
-  grid-template-rows: 13vh auto 10vh;
+  grid-template-rows: minmax(60px, 81px) auto 80px;
   height: 100vh;
 }
-.header {
+header {
+  height: 100%;
+  max-height: 81px;
+  padding: 1.5rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--header-bgcolor);
-  text-transform: uppercase;
   background-image: url('/design/background_shape_1.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,13 +28,13 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  background-color: var(--content-bgcolor);
   scroll-behavior: smooth;
-  padding: 1.5em;
-  gap: 1em;
+  padding: 1.875em;
+  gap: 2em;
 }
 
-.footer {
+footer {
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,35 +42,13 @@
   padding: 1em;
 }
 
-.navbar {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--universal-padding);
-  border-radius: 8px;
-  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
-}
-
-.navbar a,
-.navbar img {
-  display: block;
-}
-
-.active {
-  background-color: aliceblue;
-} /*Not final style, might need to change it.*/
-
 .name-box {
-  border: 0.1em solid var(--border-color);
-  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
 }
 
 .name-box > * {
-  border-bottom: 0.1em solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   width: 100%;
   display: flex;
   align-items: center;
@@ -78,17 +60,7 @@
   border-bottom: none;
 }
 
-.review-box {
-  padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  border-radius: 10px;
-  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
-}
-
+/*====== SPECIFIC ELEMENTS */
 .pair-box__item:first-of-type {
   position: relative;
 }
@@ -101,5 +73,57 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: 87.5%;
+  bottom: -10px;
+}
+
+.review-box {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  box-shadow: 0px 2px 11px 0px rgba(25, 50, 81, 0.25);
+  -webkit-box-shadow: 0px 2px 11px 0px rgba(25, 50, 81, 0.25);
+  -moz-box-shadow: 0px 2px 11px 0px rgba(25, 50, 81, 0.25);
+}
+
+.review-box > *:not(h4) {
+  margin-bottom: 1.56rem;
+}
+
+.review-box__rating-stars {
+  display: flex;
+  gap: var(--universal-padding);
+}
+
+.review-box__rating-stars img:nth-of-type(n + 4) {
+  opacity: 0.25;
+}
+
+.review-box__rating-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-box__rating-box img:nth-of-type(n + 8) {
+  opacity: 0.25;
+}
+
+.navbar {
+  display: flex;
+  height: 44px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 1.687rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 11px 0px rgba(25, 50, 81, 0.2);
+  -webkit-box-shadow: 0px 2px 11px 0px rgba(25, 50, 81, 0.2);
+  -moz-box-shadow: 0px 2px 11px 0px rgba(25, 50, 81, 0.2);
+}
+.navbar a {
+  opacity: 0.5;
+}
+
+.navbar a.active {
+  opacity: 1;
 }

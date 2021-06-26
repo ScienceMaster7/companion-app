@@ -1,22 +1,49 @@
+/* ===== GENERAL FONTS */
 h1 {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  color: var(--title-text-color);
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 0.8rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1rem;
   color: var(--title-text-color);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.625rem;
 }
 
 h3 {
-  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 18px;
+  font-size: 0.75rem;
+  color: var(--name-color);
 }
 
 h4 {
-  font-size: 0.7rem;
+  font-weight: normal;
+  line-height: 1rem;
+  font-size: 0.75rem;
+  color: var(--name-color);
+  margin-bottom: 0.812rem;
 }
 
 p {
+  font-weight: 500;
   font-size: 1rem;
   color: var(--name-color);
+}
+
+/*===== SPECIFIC FONTS*/
+.review-box__quote {
+  color: var(--title-text-color);
+}
+
+.review-box__notes {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--title-text-color);
+  font-weight: normal;
 }

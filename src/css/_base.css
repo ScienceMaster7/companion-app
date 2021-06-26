@@ -6,7 +6,6 @@
 
 html,
 :root {
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   --universal-padding: 20px;
 }
