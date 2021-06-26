@@ -1,5 +1,5 @@
 :root {
-  --header-bgcolor: rgba(222, 222, 222, 0.5);
+  --header-bgcolor: white;
   --footer-bgcolor: white;
   --content-bgcolor: white;
   --header-text-color: #193251;
@@ -7,5 +7,6 @@
   --name-color: #7589a2;
   --border-color: #e0e4e8;
   --button-color: #ff5a36;
+  --button-text-color: white;
   --footer-bgcolor: white;
 }

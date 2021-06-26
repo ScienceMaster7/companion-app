@@ -103,3 +103,25 @@
   position: absolute;
   top: 87.5%;
 }
+
+.rate-today-btn__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rate-today-btn {
+  background-color: var(--button-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: var(--button-text-color);
+  font-size: 1rem;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.rate-today-btn__icon {
+  position: relative;
+  top: 7px;
+  transform: scale(0.5);
+}
