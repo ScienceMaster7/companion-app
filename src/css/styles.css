@@ -150,3 +150,42 @@ footer {
   top: 7px;
   transform: scale(0.5);
 }
+
+.new-entry__rating-stars {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.new-entry__rectangles {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.motto-input {
+  height: 50px;
+  width: 300px;
+}
+
+.notes-input {
+  height: 100px;
+  width: 300px;
+}
+
+.cacel-save-btn-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cancel-btn {
+  width: 50%;
+  height: 40px;
+  background: none;
+  border: none;
+}
+
+.save-btn {
+  width: 50%;
+  height: 40px;
+  background-color: var(--button-color-100);
+  border-radius: 7px;
+}
