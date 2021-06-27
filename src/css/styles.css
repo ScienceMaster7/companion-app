@@ -154,7 +154,7 @@ footer {
 .new-entry__rating-stars {
   display: flex;
   justify-content: space-evenly;
-  transform: scale(1.25);
+  transform: scale(1.2);
 }
 
 .new-entry__rectangles {
@@ -189,4 +189,5 @@ footer {
   height: 40px;
   background-color: var(--button-color-100);
   border-radius: 7px;
+  color: var(--button-text-color);
 }
