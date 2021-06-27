@@ -136,7 +136,7 @@ footer {
 }
 
 .rate-today-btn {
-  background-color: var(--button-color);
+  background-color: var(--button-color-100);
   padding: 10px 30px;
   border-radius: 5px;
   color: var(--button-text-color);
