@@ -31,7 +31,7 @@ header {
   overflow-y: scroll;
   scroll-behavior: smooth;
   padding: 1.875em;
-  gap: 2em;
+  gap: 1em;
 }
 
 footer {
@@ -154,6 +154,7 @@ footer {
 .new-entry__rating-stars {
   display: flex;
   justify-content: space-evenly;
+  transform: scale(1.25);
 }
 
 .new-entry__rectangles {
