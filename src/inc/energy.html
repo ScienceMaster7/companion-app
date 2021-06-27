@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <title>Companion-App</title>
+  </head>
+  <body class="outer-grid">
+    <!-- HEADER -->
+    <header>
+      <h1 class="header__title">Energy</h1>
+    </header>
+    <!-- CONTENT -->
+    <main class="content">
+      <!-- this is a bar chart -->
+      <section class="chart-box">
+        <h2>Energy level throughout the day</h2>
+        <!-- these are the horizontal lines -->
+        <div class="chart-box__wrapper">
+          <div class="rows-wrapper">
+            <div class="rows"></div>
+            <div class="rows"></div>
+            <div class="rows"></div>
+            <div class="rows"></div>
+            <div class="rows"></div>
+          </div>
+          <!-- this is the floating bars positioned "absolute" -->
+          <div class="bar-wrapper">
+            <div class="bar-pair-box">
+              <div class="bar bar--orange" id="bar-1"></div>
+              <div class="bar bar--blue" id="bar-2"></div>
+            </div>
+            <div class="bar-pair-box">
+              <div class="bar bar--orange" id="bar-3"></div>
+              <div class="bar bar--blue" id="bar-4"></div>
+            </div>
+            <div class="bar-pair-box">
+              <div class="bar bar--orange" id="bar-5"></div>
+              <div class="bar bar--blue" id="bar-6"></div>
+            </div>
+            <div class="bar-pair-box">
+              <div class="bar bar--orange" id="bar-7"></div>
+              <div class="bar bar--blue" id="bar-8"></div>
+            </div>
+            <div class="bar-pair-box">
+              <div class="bar bar--orange" id="bar-9"></div>
+              <div class="bar bar--blue" id="bar-10"></div>
+            </div>
+          </div>
+        </div>
+        <!-- this is the legend! -->
+        <div class="legend">
+          <p class="text--white text-box--blue">Other students</p>
+          <p class="text--orange text-box--orange">You</p>
+        </div>
+      </section>
+      <!-- this is the energy level chart -->
+      <section class="level-box">
+        <h2 class="level-box__title">Rate your current energy level:</h2>
+        <div class="level-bar__wrapper">
+          <div class="level-bar__item">
+            <p class="text--white">100%</p>
+          </div>
+          <div class="level-bar__item"><p class="text--white">75%</p></div>
+          <div class="level-bar__item"><p class="text--orange">50%</p></div>
+          <div class="level-bar__item"><p class="text--orange">25%</p></div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <nav class="navbar">
+        <a href="../index.html"
+          ><img src="/design/icons/DashboardIcon.svg" alt="icon"
+        /></a>
+        <a href="buddies.html"
+          ><img src="/design/icons/BuddyIcon.svg" alt="icon"
+        /></a>
+        <a href="teams.html"
+          ><img src="/design/icons/TeamIcon.svg" alt="icon"
+        /></a>
+        <a class="active" href="#"
+          ><img src="/design/icons/EnergyIcon.svg" alt="icon"
+        /></a>
+        <a href="#"><img src="/design/icons/JournalIcon.svg" alt="icon" /></a>
+      </nav>
+    </footer>
+  </body>
+</html>

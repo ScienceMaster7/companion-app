@@ -1,2 +1,7 @@
+.text--white {
+  color: var(--content-bgcolor);
+}
 
-
+.text--orange {
+  color: var(--button-color-100);
+}
