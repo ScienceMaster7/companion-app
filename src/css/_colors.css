@@ -9,4 +9,5 @@
   --button-color-50: hsla(11, 100%, 61%, 0.5);
   --button-color-25: hsla(11, 100%, 61%, 0.25);
   --chart-otherstudents-color: rgb(25, 50, 81);
+  --chart-line-color: #7589a2;
 }

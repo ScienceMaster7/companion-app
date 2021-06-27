@@ -189,27 +189,50 @@ footer {
   height: 15rem;
   display: flex;
   flex-direction: column;
-  padding-left: 3rem;
+  padding: 2rem 0 2rem 2rem;
   border-left: 1px solid black;
   border-bottom: 1px solid black;
+  justify-content: space-between;
 }
 
 .rows {
-  background-color: teal;
   width: 100%;
-  height: 3em;
-  gap: 1rem;
-  border: 1px solid black;
+  height: 1px;
+  background-color: var(--chart-line-color);
+  color: var(--chart-line-color);
+  font-size: 0.75rem;
 }
 
-.rows::before:nth-of-type(1) {
+.rows:nth-of-type(1)::before {
   content: '100';
+  position: relative;
+  left: -2rem;
+  bottom: 1rem;
 }
-
-.rows:first-child {
-  height: 1rem;
+.rows:nth-of-type(2)::before {
+  content: '75';
+  position: relative;
+  left: -2rem;
+  bottom: 1rem;
 }
-
+.rows:nth-of-type(3)::before {
+  content: '50';
+  position: relative;
+  left: -2rem;
+  bottom: 1rem;
+}
+.rows:nth-of-type(4)::before {
+  content: '25';
+  position: relative;
+  left: -2rem;
+  bottom: 1rem;
+}
+.rows:nth-of-type(5)::before {
+  content: '0';
+  position: relative;
+  left: -2rem;
+  bottom: 1rem;
+}
 .legend {
   display: flex;
   justify-content: flex-end;
