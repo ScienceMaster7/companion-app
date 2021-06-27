@@ -5,9 +5,10 @@
   --name-color: #7589a2;
   --border-color: #e0e4e8;
   --button-text-color: white;
-
-  --button-color-100: hsl(11, 100%, 61%);
-  --button-color-75: hsl(11, 75%, 61%);
-  --button-color-50: hsl(11, 50%, 61%);
-  --button-color-25: hsl(11, 25%, 61%);
+  --button-color-100: hsla(11, 100%, 61%, 1);
+  --button-color-75: hsla(11, 100%, 61%, 0.75);
+  --button-color-50: hsla(11, 100%, 61%, 0.5);
+  --button-color-25: hsla(11, 100%, 61%, 0.25);
+  --chart-otherstudents-color: rgb(25, 50, 81);
+  --chart-line-color: #7589a2;
 }

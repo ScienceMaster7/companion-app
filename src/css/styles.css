@@ -129,6 +129,221 @@ footer {
   opacity: 1;
 }
 
+
+/*====== SPECIFIC TO ENERGY SCREEN */
+
+/*This is the chart*/
+
+.chart-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-box__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.rows-wrapper {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 0 2rem;
+  justify-content: space-between;
+}
+
+.rows {
+  width: 100%;
+  height: 1px;
+  background-color: var(--chart-line-color);
+  color: var(--chart-line-color);
+  font-size: 0.75rem;
+  position: relative;
+}
+
+.rows::before {
+  position: absolute;
+  left: -2rem;
+  bottom: 0;
+}
+.rows:nth-of-type(1)::before {
+  content: '100';
+}
+.rows:nth-of-type(2)::before {
+  content: '75';
+}
+.rows:nth-of-type(3)::before {
+  content: '50';
+}
+.rows:nth-of-type(4)::before {
+  content: '25';
+}
+.rows:nth-of-type(5)::before {
+  content: '0';
+}
+
+.bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0 1rem 0 3rem;
+}
+.bar-pair-box {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  font-size: 0.75rem;
+  color: var(--name-color);
+  justify-content: center;
+}
+
+.bar-pair-box::after {
+  position: absolute;
+  bottom: -1.5rem;
+}
+
+.bar-pair-box:nth-of-type(1)::after {
+  content: '10:00';
+}
+.bar-pair-box:nth-of-type(2)::after {
+  content: '15:30';
+}
+.bar-pair-box:nth-of-type(3)::after {
+  content: '16:15';
+}
+.bar-pair-box:nth-of-type(4)::after {
+  content: '18:25';
+}
+.bar-pair-box:nth-of-type(5)::after {
+  content: '19:00';
+}
+
+.bar {
+  width: 0.75rem;
+  height: 200px;
+  background-color: green;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.bar--orange {
+  background-color: var(--button-color-100);
+}
+
+.bar--blue {
+  background-color: var(--chart-otherstudents-color);
+}
+
+#bar-1 {
+  height: 175px;
+}
+
+#bar-2 {
+  height: 154px;
+}
+
+#bar-3 {
+  height: 131px;
+}
+
+#bar-4 {
+  height: 148px;
+}
+
+#bar-5 {
+  height: 157px;
+}
+
+#bar-6 {
+  height: 109px;
+}
+
+#bar-7 {
+  height: 72px;
+}
+#bar-8 {
+  height: 95px;
+}
+#bar-9 {
+  height: 47px;
+}
+#bar-10 {
+  height: 33px;
+}
+
+.legend {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.legend p {
+  font-size: 00.75rem;
+  padding: 5px 9px;
+  border-radius: 3px;
+  font-weight: 500;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.legend p:active {
+  opacity: 0.5;
+}
+
+.text-box--orange {
+  background-color: var(--button-color-25);
+  width: 42px;
+}
+
+.text-box--blue {
+  background-color: var(--chart-otherstudents-color);
+  width: 106px;
+}
+
+/*This is the energy level chart*/
+
+.level-bar__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.level-bar__item {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.level-bar__item:nth-of-type(1) {
+  background-color: var(--button-color-100);
+}
+
+.level-bar__item:nth-of-type(2) {
+  background-color: var(--button-color-75);
+}
+
+.level-bar__item:nth-of-type(3) {
+  background-color: var(--button-color-50);
+}
+
+.level-bar__item:nth-of-type(4) {
+  background-color: var(--button-color-25);
+
+  /*Screen 5 and 6 styles*/
 .rate-today-btn__box {
   display: flex;
   align-items: center;
