@@ -1,10 +1,10 @@
 :root {
-
   --footer-bgcolor: white;
   --content-bgcolor: white;
   --title-text-color: rgb(25, 50, 81);
   --name-color: #7589a2;
   --border-color: #e0e4e8;
+  --button-text-color: white;
   --button-color-100: hsla(11, 100%, 61%, 1);
   --button-color-75: hsla(11, 100%, 61%, 0.75);
   --button-color-50: hsla(11, 100%, 61%, 0.5);
