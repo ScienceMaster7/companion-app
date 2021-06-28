@@ -8,7 +8,7 @@
 /*====== NON-SPECIFIC BLOCKS */
 .outer-grid {
   display: grid;
-  grid-template-rows: minmax(60px, 81px) auto 80px;
+  grid-template-rows: 81px auto;
   height: 100vh;
 }
 header {
@@ -32,14 +32,18 @@ header {
   scroll-behavior: smooth;
   padding: 1.875em;
   gap: 1em;
+  padding-bottom: 80px;
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
   height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--footer-bgcolor);
   padding: 1em;
 }
 
@@ -111,6 +115,7 @@ footer {
 
 .navbar {
   display: flex;
+  background-color: var(--footer-bgcolor);
   height: 44px;
   width: 100%;
   justify-content: space-between;
