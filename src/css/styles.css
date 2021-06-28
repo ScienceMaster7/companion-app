@@ -129,7 +129,6 @@ footer {
   opacity: 1;
 }
 
-
 /*====== SPECIFIC TO ENERGY SCREEN */
 
 /*This is the chart*/
@@ -342,8 +341,9 @@ footer {
 
 .level-bar__item:nth-of-type(4) {
   background-color: var(--button-color-25);
+}
+/*Screen 5 and 6 styles*/
 
-  /*Screen 5 and 6 styles*/
 .rate-today-btn__box {
   display: flex;
   align-items: center;
