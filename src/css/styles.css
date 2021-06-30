@@ -411,3 +411,9 @@ footer {
   border-radius: 7px;
   color: var(--button-text-color);
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
