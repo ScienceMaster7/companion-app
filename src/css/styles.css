@@ -417,3 +417,8 @@ form {
   flex-direction: column;
   gap: 1em;
 }
+
+.rate-today-btn__link {
+  color: white;
+  text-decoration: none;
+}
