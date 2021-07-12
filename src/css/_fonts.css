@@ -47,3 +47,10 @@ p {
   color: var(--title-text-color);
   font-weight: normal;
 }
+
+label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: var(--title-text-color);
+}
